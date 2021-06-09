@@ -24,8 +24,7 @@ def decode_Info1(enc):
     return b64decode(''.join(res).encode('ascii')).decode('ascii')
   
 # https://www.reddit.com/r/UnscramblingTheEggs/comments/nvr0hz/i_decoded_the_new_information_post/
-
-def conv(string):
+def decode_Info2(string):
     # hexadecimal
     res = unhexlify(string.encode('ascii'))
     # base64
